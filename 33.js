@@ -67,71 +67,71 @@ var loadweb = () => setTimeout(() => {
     window.reset = () => (rate(0), document.querySelector(`#reset`).style.display = `none`, document.querySelector(`#name`).value = ``, document.querySelector(`#review`).value = ``, closef());
     window.rate = q => {
         ratei = q;
-        document.querySelector(`#rate1`).src = `../media/star_d.png`;
-        document.querySelector(`#rate2`).src = `../media/star_d.png`;
-        document.querySelector(`#rate3`).src = `../media/star_d.png`;
-        document.querySelector(`#rate4`).src = `../media/star_d.png`;
-        document.querySelector(`#rate5`).src = `../media/star_d.png`;
+        document.querySelector(`#rate1`).src = `star_d.png`;
+        document.querySelector(`#rate2`).src = `star_d.png`;
+        document.querySelector(`#rate3`).src = `star_d.png`;
+        document.querySelector(`#rate4`).src = `star_d.png`;
+        document.querySelector(`#rate5`).src = `star_d.png`;
         switch (q) {
             case 5:
-                document.querySelector(`#rate5`).src = `../media/star_e.png`;
+                document.querySelector(`#rate5`).src = `star_e.png`;
             case 4:
-                document.querySelector(`#rate4`).src = `../media/star_e.png`;
+                document.querySelector(`#rate4`).src = `star_e.png`;
             case 3:
-                document.querySelector(`#rate3`).src = `../media/star_e.png`;
+                document.querySelector(`#rate3`).src = `star_e.png`;
             case 2:
-                document.querySelector(`#rate2`).src = `../media/star_e.png`;
+                document.querySelector(`#rate2`).src = `star_e.png`;
             case 1:
-                document.querySelector(`#rate1`).src = `../media/star_e.png`;
+                document.querySelector(`#rate1`).src = `star_e.png`;
                 document.querySelector(`#reset`).style.display = `block`;
         };
     };
     window.add = () => {
         addstuff([
-            [`../media/33.2.png`, `HTML`, [
+            [`33.2.png`, `HTML`, [
                 [`Basics`, 100],
                 [`Most Frequently Used`, 90],
                 [`Everything in HTML`, 30]
             ]],
-            [`../media/33.3.png`, `CSS`, [
+            [`33.3.png`, `CSS`, [
                 [`Basics`, 100],
                 [`Flexbox`, 100],
                 [`Media Queries`, 85],
                 [`Grid`, 5],
                 [`Transition & Transform`, 0.1]
             ]],
-            [`../media/33.4.png`, `JS`, [
+            [`33.4.png`, `JS`, [
                 [`Basics`, 100],
                 [`Canvas`, 85],
                 [`DOM Response using CSS`, 90],
                 [`Backend Related Basics`, 55],
                 [`Event Listeners`, 100]
             ]],
-            [`../media/33.5.png`, `Tinkercad`, [
+            [`33.5.png`, `Tinkercad`, [
                 [`Basics`, 75]
             ]],
-            [`../media/33.6.png`, `Blender`, [
+            [`33.6.png`, `Blender`, [
                 [`Basics`, 20]
             ]],
-            [`../media/33.7.png`, `Dialogflow`, [
+            [`33.7.png`, `Dialogflow`, [
                 [`Basics`, 100]
             ]],
-            [`../media/33.8.png`, `Github`, [
+            [`33.8.png`, `Github`, [
                 [`Hosting`, 100]
             ]],
-            [`../media/33.9.png`, `Firebase`, [
+            [`33.9.png`, `Firebase`, [
                 [`Basics`, 100],
                 [`Rules`, 0]
             ]],
-            [`../media/33.10.png`, `Teachable Machine`, [
+            [`33.10.png`, `Teachable Machine`, [
                 [`Image & Audio Project`, 100],
                 [`Linking to Web`, 100]
             ]],
-            [`../media/33.11.png`, `Code.org`, [
+            [`33.11.png`, `Code.org`, [
                 [`Basics`, 100],
                 [`Everything`, 90]
             ]],
-            [`../media/33.12.png`, `Thunkable`, [
+            [`33.12.png`, `Thunkable`, [
                 [`Basics`, 100],
                 [`Everthing`, 70]
             ]]
@@ -169,8 +169,8 @@ var loadweb = () => setTimeout(() => {
     };
     window.opens = () => x === 0 ? (x = 1, s(`#nav_c{display: flex;top: ${get(`#nav`, `height`) + 25}px;}`)) : (x = 0, setTimeout(() => s(`#nav_c{display: none;}`), 5));
     window.checkdraw = () => {
-        imgD.src = `../media/draw${imgDsrc}.jpg`;
-        imgfull.src = `../media/draw${imgDsrc}.jpg`;
+        imgD.src = `draw${imgDsrc}.jpg`;
+        imgfull.src = `draw${imgDsrc}.jpg`;
         return imgDsrc === 1 ? `Doodle Art ~ 5th STD` : imgDsrc === 2 ? `Angry 2 Birds Movie Poster ~ 5th STD` : imgDsrc === 3 ? `Pot ~ 7th STD` : imgDsrc === 4 ? `Landscape ~ 7th STD` : imgDsrc === 5 ? `Flower ~ 7th STD` : imgDsrc === 6 ? `Olympic Logo ~ 7th STD` : imgDsrc === 7 ? `Flower ~ 7th STD` : imgDsrc === 8 ? `Room Perspective ~ 6th STD` : imgDsrc === 9 ? `Ganesha ~ 6th STD` : imgDsrc === 10 ? `Shapes ~ 7th STD` : imgDsrc === 11 ? `Water Bottle ~ 7th STD` : imgDsrc === 12 ? `Jar ~ 7th STD` : imgDsrc === 13 ? `Fruits ~ 7th STD` : imgDsrc === 14 ? `Boxes ~ 7th STD` : imgDsrc === 15 ? `Tree Cross Hatching ~ 7th STD` : imgDsrc === 16 ? `Fish ~ 7th STD` : imgDsrc === 17 ? `Rose ~ 7th STD` : imgDsrc === 18 ? `Cherry Blossom Painting ~ 7th STD` : imgDsrc === 19 ? `Temple ~ UKG` : imgDsrc === 20 ? `Cartoon Characters ~ 8th STD` : imgDsrc === 21 ? `Cartoon Characters ~ 8th STD` : imgDsrc === 22 ? `Cartoon Characters ~ 8th STD` : imgDsrc === 23 ? `Wolf Shading ~ 8th STD` : imgDsrc === 24 ? `Tiger Shading ~ 8th STD` : imgDsrc === 25 ? `One Point Perspective ~ 8th STD` : imgDsrc === 26 ? `Two Point Perspective ~ 8th STD` : imgDsrc === 27 ? `Three Point Perspective ~ 8th STD` : imgDsrc === 28 ? `Camel Tonal Illustration ~ 8th STD` : imgDsrc === 29 ? `Elephant Tonal Illustration ~ 8th STD` : imgDsrc === 30 ? `Flowers ~ 8th STD` : imgDsrc === 31 ? `Scenary Sun Set ~ 8th STD` : imgDsrc === 32 ? `Pot Shading ~ 8th STD` : imgDsrc === 33 ? `Cock Palette Knife Painting ~ 8th STD` : imgDsrc === 34 ? `Disney Cars ~ 8th STD` : imgDsrc === 35 ? `Disney Cars ~ 8th STD` : imgDsrc === 36 ? `Disney Cars ~ 8th STD` : imgDsrc === 37 ? `Objects Shading ~ 8th STD` : imgDsrc === 38 ? `Vegetables Shading ~ 8th STD` : imgDsrc === 39 ? `Crane Shading ~ 8th STD` : imgDsrc === 40 ? `Body Parts ~ 8th STD` : imgDsrc === 41 ? `Body Parts ~ 8th STD` : imgDsrc === 42 ? `Body Parts ~ 8th STD` : imgDsrc === 43 ? `Body Parts ~ 8th STD` : imgDsrc === 44 ? `Perspective ~ 8th STD` : imgDsrc === 45 ? `Scenary ~ 8th STD` : imgDsrc === 46 ? `Owl ~ 7th STD` : imgDsrc === 47 ? `Diwali ~ 8th STD` : imgDsrc === 48 ? `Forests Poster ~ 7th STD` : imgDsrc === 49 ? `Taj Mahal ~ 4th STD` : imgDsrc === 50 ? `Importance Of Pollination Poster ~ 7th STD` : imgDsrc === 51 ? `Child Labour Poster ~ 7th STD` : imgDsrc === 52 ? `Elephant Tonal Illustration ~ 7th STD` : imgDsrc === 53 ? `Warli Art ~ 7th STD` : imgDsrc === 54 ? `Madhubani Art ~ 7th STD` : imgDsrc === 55 ? `Kalamkari Art ~ 7th STD` : imgDsrc === 56 ? `One Point Perspective ~ 7th STD` : imgDsrc === 57 ? `Two Point Perspective ~ 7th STD` : imgDsrc === 58 ? `Three Point Perspective ~ 7th STD` : `Madhubani Art ~ 7th STD`
     };
     window.prev = () => {
