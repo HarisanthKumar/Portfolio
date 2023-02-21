@@ -10,8 +10,27 @@ const firebaseConfig = {
     databaseURL: `https://bingo-f76d1-default-rtdb.firebaseio.com/`
 };
 firebase.initializeApp(firebaseConfig);
-
+var allviews = undefined;
+var views = undefined;
+var snaps = {};
+firebase.database().ref(`Portfolio/View`).on("value", (snapshot) => {
+    snapshot.forEach((childsnapshot) => {
+        snaps[childsnapshot.key] = childsnapshot.val();
+    });
+});
 var loadweb = () => setTimeout(() => {
+    loadmodaljs();
+    allviews = snaps.AllViews;
+    views=snaps.Views;
+    firebase.database().ref("Portfolio/View").update({
+        "AllViews": allviews + 1
+    });
+    if (!localStorage.getItem("Viewed")) {
+        firebase.database().ref("Portfolio/View").update({
+            "Views": views + 1
+        });
+        localStorage.setItem("Viewed", "Yes");
+    };
     window.w_s = 0,
         window.h_s = 0,
         window.x = 0,
@@ -150,15 +169,23 @@ var loadweb = () => setTimeout(() => {
         document.querySelector(`#float1`).style.display = `block`;
     };
     window.submit = () => {
-        ratei ? checkname(document.querySelector(`#name`).value) ? checkname(document.querySelector(`#review`).value) ? (localStorage.getItem(`ReviewID`) ? firebase.database().ref(`Portfolio/${localStorage.getItem(`ReviewID`)}`).update({
-            'Name': document.querySelector(`#name`).value,
-            'Comment': document.querySelector(`#review`).value,
-            'Rating': ratei
-        }) : firebase.database().ref(`Portfolio`).push({
-            'Name': document.querySelector(`#name`).value,
-            'Comment': document.querySelector(`#review`).value,
-            'Rating': ratei
-        }).then(snap => localStorage.setItem(`ReviewID`, snap.key)), reset()) : modal(`Invalid Review`, `Enter Your Review.`, 2) : modal(`Invalid Name`, `Enter Your Name.`, 2) : modal(`Rating Required`, `Please Specify A Rating From 1 - 5.`, 2)
+        ratei ?
+            checkname(document.querySelector(`#name`).value) ?
+            checkname(document.querySelector(`#review`).value) ?
+            (localStorage.getItem(`ReviewID`) ?
+                firebase.database().ref(`Portfolio/EditedReviews/${localStorage.getItem(`ReviewID`)}`).push({
+                    'Name': document.querySelector(`#name`).value,
+                    'Comment': document.querySelector(`#review`).value,
+                    'Rating': ratei
+                }) :
+                firebase.database().ref(`Portfolio/FirstReviews`).push({
+                    'Name': document.querySelector(`#name`).value,
+                    'Comment': document.querySelector(`#review`).value,
+                    'Rating': ratei
+                }).then(snap => localStorage.setItem(`ReviewID`, snap.key)), reset()) :
+            modal(`Invalid Review`, `Enter Your Review.`, 2) :
+            modal(`Invalid Name`, `Enter Your Name.`, 2) :
+            modal(`Rating Required`, `Please Specify A Rating From 1 - 5.`, 2)
     };
     window.checkname = q => {
         acc = false;
