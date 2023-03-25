@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/33.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&&family=Caramel&family=Secular+One&family=Lobster&family=Kaushan+Script&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+</head>
+<script src="../js/33.js"></script>
+<script src="../Common/modal(debugged).js"></script>
+
+<body onload="downloadimg();">
+    <div style="display:flex;width:100vw;height:100vh;justify-content:center;align-items:center;font-size:20px;font-weight:bold;font-style:italic;" id="loadwait">
+        Loading...Pls Wait...
+    </div>
+    <div style="display:none;" id="loadwebsite">
+        <div id="nav">
+            <a href="#sec1" id="l1" class="l">About Me</a>
+            <a href="#sec2" id="l2" class="l">Hobbies</a>
+            <a href="#sec3" id="l3" class="l">My Favourite Books</a>
+            <a href="#sec4" id="l4" class="l">My Works</a>
+            <a href="#sec5" id="l5" class="l">Skills</a>
+            <a href="#sec6" id="l6" class="l">Drawings</a>
+            <a href="#sec7" id="l7" class="l">Contact</a>
+            <a href="#sec8" id="l8" class="l">Credits</a>
+            <img id="b1">
+        </div>
+        <div id="nav_c">
+            <a href="#sec1" id="cl1" class="l cl">About Me</a>
+            <hr id="hr1" class="h">
+            <a href="#sec2" id="cl2" class="l cl">Hobbies</a>
+            <hr id="hr2" class="h">
+            <a href="#sec3" id="cl3" class="l cl">My Favourite Books</a>
+            <hr id="hr3" class="h">
+            <a href="#sec4" id="cl4" class="l cl">My Works</a>
+            <hr id="hr4" class="h">
+            <a href="#sec5" id="cl5" class="l cl">Skills</a>
+            <hr id="hr5" class="h">
+            <a href="#sec6" id="cl6" class="l cl">Drawings</a>
+            <hr id="hr6" class="h">
+            <a href="#sec7" id="cl7" class="l cl">Contact</a>
+            <hr id="hr7" class="h">
+            <a href="#sec8" id="cl8" class="l cl">Credits</a>
+        </div>
+        <section id="sec">
+            <label id="label1">Hello, </label>
+            <label id="label2">I Am Harisanth Kumar</label>
+        </section>
+        <section id="sec1">
+            <label id="label3">About Me</label>
+            <hr id="hr61">
+            <div id="span1">
+                <div id="profile">
+                    <img id="img1">
+                    <div id="contact">
+
+                    </div>
+                </div>
+                <table id="info">
+                    <tr>
+                        <td class="bold">Name :</td>
+                        <td class="content">S. Harisanth Kumar</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Age :</td>
+                        <td class="content">14</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Class :</td>
+                        <td class="content">8 - A</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">School :</td>
+                        <td class="content">Chinmaya Vidyalaya Taylors Road</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Hobbies :</td>
+                        <td class="content">Drawing, Coding and Reading</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Ambition :</td>
+                        <td class="content">Coder, Web/Game Developer</td>
+                    </tr>
+                </table>
+            </div>
+            <a id="linke" href="#sec7">Contacts</a>
+        </section>
+        <section id="sec2">
+            <label id="label5">Hobbies</label>
+            <div id="contain">
+                <div class="hobby_div">
+                    <img id="anony13" class="hobby_img">
+                        <label class="hobby_label">Coding</label>
+                </div>
+                <div class="hobby_div">
+                    <img id="anony14" class="hobby_img">
+                    <label class="hobby_label">Reading</label>
+                </div>
+                <div class="hobby_div">
+                    <img id="anony15" class="hobby_img">
+                    <label class="hobby_label">Drawing</label>
+                </div>
+                <div class="hobby_div">
+                    <img class="hobby_img" id="anony12">
+                    <label class="hobby_label">Anime</label>
+                </div>
+            </div>
+        </section>
+        <section id="sec3">
+            <label id="label4">My Favourite Books</label>
+            <div id="book_c_c">
+                <div class="book_content">
+                    <img class="book_img" id="anony18">
+                    <a href="https://thebrilliantworldoftomgates.com/" target="_blank" class="book_a">Tom Gates</a>
+                </div>
+                <div class="book_content">
+                    <img class="book_img" id="anony19">
+                    <a href="https://geronimostilton.com/" target="_blank" class="book_a">Geronimo Stilton</a>
+                </div>
+                <div class="book_content">
+                    <img class="book_img" id="anony20">
+                    <a href="https://en.wikipedia.org/wiki/Treasure_Island" target="_blank" class="book_a">Treasure
+                        Island</a>
+                </div>
+            </div>
+        </section>
+        <section id="sec4">
+            <label id="label6">My Works</label>
+            <br><br><br>
+            <div id="cont">
+                <div>
+                    <label class="label7">Code.org</label>
+                    <br>
+                    <a href="https://studio.code.org/projects/applab/0jt3f0VKkABh7_DxNy52wSbcXkKpxHKqNhIyhbszVW0"
+                        target="_blank">RGB Value Finder</a>
+                    <br>
+                    <a href="https://studio.code.org/projects/applab/0wpzKQ0XMZYokLdPISyQ-qcFvgLOizP1d9jgNZWzxQY"
+                        target="_blank">Multi Purpose Calculator</a>
+                </div>
+                <div>
+                    <label class="label7">Websites</label>
+                    <br>
+                    <a href="https://harisanthkumar.github.io/Valet-Parking/" target="_blank">Car Parking Game</a>
+                    <br>
+                    <a href="https://harisanthkumar.github.io/Olmpic-Logo/" target="_blank">Olmpic Logo</a>
+                    <br>
+                    <a href="https://harisanthkumar.github.io/Neural-Networks/" target="_blank">Neural Networks</a>
+                    <br>
+                    <a href="https://harisanthkumar.github.io/Object-Recognisation/" target="_blank">Object
+                        Recognition</a>
+                    <br>
+                    <a href="https://harisanthkumar.github.io/Sound-Recognisation/" target="_blank">Sound
+                        Recognition</a>
+                    <br>
+                    <a href="https://harisanthkumar.github.io/Bingo/" target="_blank">Bingo</a>
+                </div>
+                <div>
+                    <label class="label7">Tinkercad</label>
+                    <br>
+                    <a href="https://www.tinkercad.com/things/hERB97Q5GSn" target="_blank">A Rocket Design</a>
+                    <br>
+                    <a href="https://www.tinkercad.com/things/aiiLcc4mX2n" target="_blank">A Spacecraft Design</a>
+                </div>
+            </div>
+        </section>
+        <section id="sec5">
+            <label id="label7">Skills</label>
+            <label class="note">Note: This is only my own personal ratings.</label>
+            <div id="mainContainer"></div>
+            <div id="sideContainer">
+                <img id="anony1" onclick="cont(1)">
+                <img id="anony2" onclick="cont(2)">
+                <img id="anony3" onclick="cont(3)">
+                <img id="anony4" onclick="cont(4)">
+                <img id="anony5" onclick="cont(5)">
+                <img id="anony6" onclick="cont(6)">
+                <img id="anony7" onclick="cont(7)">
+                <img id="anony8" onclick="cont(8)">
+                <img id="anony9" onclick="cont(9)">
+                <img id="anony10" onclick="cont(10)">
+                <img id="anony11" onclick="cont(11)">
+            </div>
+        </section>
+        <section id="sec6">
+            <label id="label8">Drawings</label>
+            <label class="note">Click The Image To View It</label>
+            <div id="contD">
+                <span>
+                    <img onclick="oimg()" id="imgD">
+                </span>
+                <label id="infoDraw"></label>
+                <div>
+                    <img class="pnd" onclick="prev()" id="anony16">
+                    <img class="pnd" onclick="next()" id="anony17">
+                </div>
+            </div>
+        </section>
+        <section id="sec7">
+            <label id="label9">Contact</label>
+            <table id="tab">
+                <tr>
+                    <th>Email&nbsp;:&nbsp;</th>
+                    <td>sensakharisows@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Whatsapp / Phone&nbsp;:&nbsp;</th>
+                    <td>9840097027</td>
+                </tr>
+            </table>
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248755.78021750183!2d80.06892696750803!3d13.047822267254825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1676806774900!5m2!1sen!2sin"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+        </section>
+        <section id="sec8">
+            <label id="label10">Credits</label><br>
+            <p>
+                The only content which were obtained from  Internet and used here are Images.<br><br>
+                We have tried only to use Copyright-Free images with Creative Common License.<br><br>
+                The Images from the Internet are used for Web-Design only.<br><br>
+                The External Links Embedded/Used in this Website are
+                <a href="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"
+                    target="_blank">Firebase.js</a>, Google Maps and Fonts.<br><br>
+                Sources of the images used in this Web-design: <a
+                    href="https://commons.wikimedia.org/wiki/File:Naruto101.jpg" target="_blank">Naruto Wallpaper</a>,
+                <a href="https://www.needpix.com/photo/amp/763489/dual-screen-programming-coding-preview-html-css-commands-office-work"
+                    target="_blank">Coding</a>,
+                <a href="https://www.maxpixel.net/Education-Books-Study-Home-Read-Book-Reading-6132649"
+                    target="_blank">Reading</a>,
+                <a href="https://www.flickr.com/photos/30485180@N06/3967682030" target="_blank">Drawing</a>,
+                <a href="https://www.hdwallpapers.net/anime/kakashi-hatake-wallpaper-425.htm" target="_blank">Anime</a>
+                and images of Books and Apps.<br><br>
+                Firebase Realtime Database Test Mode is used for the Backend.<br><br>
+                The Drawings in this Website were made using Disney - Art Attack
+                and Art Gallery books...<br><br>
+                Credits of this Website except the above mentioned content goes to us.
+                <br><br><br>
+                <i style="color: green;font-family: sans-serif;">
+                    Source Code / Backend / Media Files last updated on 25.03.2023.
+                    <br>
+                    Previously updated on 21.02.2023.
+                </i>
+                <br><br><br>
+                <a href="#sec7">Contact</a>
+            </p>
+        </section>
+        <div id="hid"></div>
+        <div id="float">
+            <label>Rate My Portfolio (:</label>
+            <span>
+                <img id="rate1" onclick="rate(1)">
+                <img id="rate2" onclick="rate(2)">
+                <img id="rate3" onclick="rate(3)">
+                <img id="rate4" onclick="rate(4)">
+                <img id="rate5" onclick="rate(5)">
+            </span>
+            <input placeholder="Name" oninput="resetcheck()" type="text" maxlength="15" id="name">
+            <input placeholder="Review" oninput="resetcheck()" type="text" maxlength="500" id="review">
+            <div>
+                <button id="submit" onclick="submit()">Submit</button>
+                <button id="reset" onclick="reset()">Reset</button>
+                <button id="closef" onclick="closef()">Close</button>
+            </div>
+        </div>
+        <img id="float1" onclick="open_float()">
+        <div id="imgcont">
+            <img id="closeimg" onclick="cimg()">
+            <img id="previmg" onclick="prev()">
+            <img id="imgfull">
+            <img id="nextimg" onclick="next()">
+            <label id="infoDraw1"></label>
+        </div>
+    </div>
+</body>
+
+</html>
+<style id="style"></style>
