@@ -1,20 +1,20 @@
-// const firebaseConfig = {
-//     apiKey: `AIzaSyDoDxn2YU6Jjk7b2hNaptHjwxg06Y2GKeM`,
-//     authDomain: `bingo-f76d1.firebaseapp.com`,
-//     databaseURL: `https://bingo-f76d1-default-rtdb.firebaseio.com`,
-//     projectId: `bingo-f76d1`,
-//     storageBucket: `bingo-f76d1.appspot.com`,
-//     messagingSenderId: `744971445434`,
-//     appId: `1:744971445434:web:13c8697adeea397e6a8e83`,
-//     measurementId: `G-79B602PK6J`,
-//     databaseURL: `https://bingo-f76d1-default-rtdb.firebaseio.com/`
-// };
-// firebase.initializeApp(firebaseConfig);
-// firebase.database().ref(`Portfolio/View`).on("value", (snapshot) => {
-//     snapshot.forEach((childsnapshot) => {
-//         snaps[childsnapshot.key] = childsnapshot.val();
-//     });
-// });
+const firebaseConfig = {
+    apiKey: `AIzaSyDoDxn2YU6Jjk7b2hNaptHjwxg06Y2GKeM`,
+    authDomain: `bingo-f76d1.firebaseapp.com`,
+    databaseURL: `https://bingo-f76d1-default-rtdb.firebaseio.com`,
+    projectId: `bingo-f76d1`,
+    storageBucket: `bingo-f76d1.appspot.com`,
+    messagingSenderId: `744971445434`,
+    appId: `1:744971445434:web:13c8697adeea397e6a8e83`,
+    measurementId: `G-79B602PK6J`,
+    databaseURL: `https://bingo-f76d1-default-rtdb.firebaseio.com/`
+};
+firebase.initializeApp(firebaseConfig);
+firebase.database().ref(`Portfolio/View`).on("value", (snapshot) => {
+    snapshot.forEach((childsnapshot) => {
+        snaps[childsnapshot.key] = childsnapshot.val();
+    });
+});
 var allviews = undefined,
     views = undefined,
     snaps = {},
@@ -83,50 +83,50 @@ var allviews = undefined,
         window.img42_q = new Image();
         window.img43_q = new Image();
         window.img44_q = new Image();
-        img1_q.src = "../media/33.1.png";
-        img2_q.src = "../media/33.2.png";
-        img3_q.src = "../media/33.3.png";
-        img4_q.src = "../media/33.4.png";
-        img5_q.src = "../media/33.5.png";
-        img6_q.src = "../media/33.6.png";
-        img7_q.src = "../media/33.7.png";
-        img8_q.src = "../media/33.8.png";
-        img9_q.src = "../media/33.9.png";
-        img10_q.src = "../media/33.10.png";
-        img11_q.src = "../media/33.11.png";
-        img12_q.src = "../media/33.12.png";
-        img13_q.src = "../media/draw1.jpg";
-        img14_q.src = "../media/draw2.jpg";
-        img15_q.src = "../media/draw3.jpg";
-        img16_q.src = "../media/draw4.jpg";
-        img17_q.src = "../media/draw5.jpg";
-        img18_q.src = "../media/draw6.jpg";
-        img19_q.src = "../media/draw7.jpg";
-        img20_q.src = "../media/draw8.jpg";
-        img21_q.src = "../media/draw9.jpg";
-        img22_q.src = "../media/draw10.jpg";
-        img23_q.src = "../media/draw11.jpg";
-        img24_q.src = "../media/draw12.jpg";
-        img25_q.src = "../media/draw13.jpg";
-        img26_q.src = "../media/draw14.jpg";
-        img27_q.src = "../media/draw15.jpg";
-        img28_q.src = "../media/draw16.jpg";
-        img29_q.src = "../media/Geronimo Stilton.jpg";
-        img30_q.src = "../media/draw17.jpg";
-        img31_q.src = "../media/draw18.jpg";
-        img32_q.src = "../media/draw19.jpg";
-        img33_q.src = "../media/ho.jpg";
-        img34_q.src = "../media/hobbies.1.jpg";
-        img35_q.src = "../media/hobbies.2.jpg";
-        img36_q.src = "../media/hobbies.3.jpg";
-        img37_q.src = "../media/hobbies.4.png";
-        img38_q.src = "../media/star_d.png";
-        img39_q.src = "../media/star_e.png";
-        img40_q.src = "../media/prev.png";
-        img41_q.src = "../media/next.png";
-        img42_q.src = "../media/close.png";
-        img43_q.src = "../media/tom gates logo.jpg";
-        img44_q.src = "../media/treasure island.jpg";
+        img1_q.src = "33.1.png";
+        img2_q.src = "33.2.png";
+        img3_q.src = "33.3.png";
+        img4_q.src = "33.4.png";
+        img5_q.src = "33.5.png";
+        img6_q.src = "33.6.png";
+        img7_q.src = "33.7.png";
+        img8_q.src = "33.8.png";
+        img9_q.src = "33.9.png";
+        img10_q.src = "33.10.png";
+        img11_q.src = "33.11.png";
+        img12_q.src = "33.12.png";
+        img13_q.src = "draw1.jpg";
+        img14_q.src = "draw2.jpg";
+        img15_q.src = "draw3.jpg";
+        img16_q.src = "draw4.jpg";
+        img17_q.src = "draw5.jpg";
+        img18_q.src = "draw6.jpg";
+        img19_q.src = "draw7.jpg";
+        img20_q.src = "draw8.jpg";
+        img21_q.src = "draw9.jpg";
+        img22_q.src = "draw10.jpg";
+        img23_q.src = "draw11.jpg";
+        img24_q.src = "draw12.jpg";
+        img25_q.src = "draw13.jpg";
+        img26_q.src = "draw14.jpg";
+        img27_q.src = "draw15.jpg";
+        img28_q.src = "draw16.jpg";
+        img29_q.src = "Geronimo Stilton.jpg";
+        img30_q.src = "draw17.jpg";
+        img31_q.src = "draw18.jpg";
+        img32_q.src = "draw19.jpg";
+        img33_q.src = "ho.jpg";
+        img34_q.src = "hobbies.1.jpg";
+        img35_q.src = "hobbies.2.jpg";
+        img36_q.src = "hobbies.3.jpg";
+        img37_q.src = "hobbies.4.png";
+        img38_q.src = "star_d.png";
+        img39_q.src = "star_e.png";
+        img40_q.src = "prev.png";
+        img41_q.src = "next.png";
+        img42_q.src = "close.png";
+        img43_q.src = "tom gates logo.jpg";
+        img44_q.src = "treasure island.jpg";
         img1_q.onload = () => set_img(["#b1"], 1)
         img2_q.onload = () => set_img(["#anony1"], 2);
         img3_q.onload = () => set_img(["#anony2"], 3);
@@ -173,17 +173,17 @@ var allviews = undefined,
         img44_q.onload = () => set_img(["#anony20"], 44);
     },
     loadweb = () => {
-        // allviews = snaps.AllViews;
-        // views=snaps.Views;
-        // firebase.database().ref("Portfolio/View").update({
-        //     "AllViews": allviews + 1
-        // });
-        // if (!localStorage.getItem("Viewed")) {
-        //     firebase.database().ref("Portfolio/View").update({
-        //         "Views": views + 1
-        //     });
-        //     localStorage.setItem("Viewed", "Yes");
-        // };
+        allviews = snaps.AllViews;
+        views=snaps.Views;
+        firebase.database().ref("Portfolio/View").update({
+            "AllViews": allviews + 1
+        });
+        if (!localStorage.getItem("Viewed")) {
+            firebase.database().ref("Portfolio/View").update({
+                "Views": views + 1
+            });
+            localStorage.setItem("Viewed", "Yes");
+        };
         window.w_s = 0,
             window.h_s = 0,
             window.x = 0,
@@ -239,71 +239,71 @@ var allviews = undefined,
         window.reset = () => (rate(0), document.querySelector(`#reset`).style.display = `none`, document.querySelector(`#name`).value = ``, document.querySelector(`#review`).value = ``, closef());
         window.rate = q => {
             ratei = q;
-            document.querySelector(`#rate1`).src = `../media/star_d.png`;
-            document.querySelector(`#rate2`).src = `../media/star_d.png`;
-            document.querySelector(`#rate3`).src = `../media/star_d.png`;
-            document.querySelector(`#rate4`).src = `../media/star_d.png`;
-            document.querySelector(`#rate5`).src = `../media/star_d.png`;
+            document.querySelector(`#rate1`).src = `star_d.png`;
+            document.querySelector(`#rate2`).src = `star_d.png`;
+            document.querySelector(`#rate3`).src = `star_d.png`;
+            document.querySelector(`#rate4`).src = `star_d.png`;
+            document.querySelector(`#rate5`).src = `star_d.png`;
             switch (q) {
                 case 5:
-                    document.querySelector(`#rate5`).src = `../media/star_e.png`;
+                    document.querySelector(`#rate5`).src = `star_e.png`;
                 case 4:
-                    document.querySelector(`#rate4`).src = `../media/star_e.png`;
+                    document.querySelector(`#rate4`).src = `star_e.png`;
                 case 3:
-                    document.querySelector(`#rate3`).src = `../media/star_e.png`;
+                    document.querySelector(`#rate3`).src = `star_e.png`;
                 case 2:
-                    document.querySelector(`#rate2`).src = `../media/star_e.png`;
+                    document.querySelector(`#rate2`).src = `star_e.png`;
                 case 1:
-                    document.querySelector(`#rate1`).src = `../media/star_e.png`;
+                    document.querySelector(`#rate1`).src = `star_e.png`;
                     document.querySelector(`#reset`).style.display = `block`;
             };
         };
         window.add = () => {
             addstuff([
-                [`../media/33.2.png`, `HTML`, [
+                [`33.2.png`, `HTML`, [
                     [`Basics`, 100],
                     [`Most Frequently Used`, 90],
                     [`Everything in HTML`, 30]
                 ]],
-                [`../media/33.3.png`, `CSS`, [
+                [`33.3.png`, `CSS`, [
                     [`Basics`, 100],
                     [`Flexbox`, 100],
                     [`Media Queries`, 85],
                     [`Grid`, 5],
                     [`Transition & Transform`, 0.1]
                 ]],
-                [`../media/33.4.png`, `JS`, [
+                [`33.4.png`, `JS`, [
                     [`Basics`, 100],
                     [`Canvas`, 85],
                     [`DOM Response using CSS`, 90],
                     [`Backend Related Basics`, 55],
                     [`Event Listeners`, 100]
                 ]],
-                [`../media/33.5.png`, `Tinkercad`, [
+                [`33.5.png`, `Tinkercad`, [
                     [`Basics`, 75]
                 ]],
-                [`../media/33.6.png`, `Blender`, [
+                [`33.6.png`, `Blender`, [
                     [`Basics`, 10]
                 ]],
-                [`../media/33.7.png`, `Dialogflow`, [
+                [`33.7.png`, `Dialogflow`, [
                     [`Basics`, 100]
                 ]],
-                [`../media/33.8.png`, `Github`, [
+                [`33.8.png`, `Github`, [
                     [`Hosting`, 100]
                 ]],
-                [`../media/33.9.png`, `Firebase`, [
+                [`33.9.png`, `Firebase`, [
                     [`Basics`, 100],
                     [`Rules`, 5]
                 ]],
-                [`../media/33.10.png`, `Teachable Machine`, [
+                [`33.10.png`, `Teachable Machine`, [
                     [`Image & Audio Project`, 100],
                     [`Linking to Web`, 100]
                 ]],
-                [`../media/33.11.png`, `Code.org`, [
+                [`33.11.png`, `Code.org`, [
                     [`Basics`, 100],
                     [`Everything`, 90]
                 ]],
-                [`../media/33.12.png`, `Thunkable`, [
+                [`33.12.png`, `Thunkable`, [
                     [`Basics`, 100],
                     [`Everthing`, 70]
                 ]]
@@ -349,8 +349,8 @@ var allviews = undefined,
         };
         window.opens = () => x === 0 ? (x = 1, s(`#nav_c{display: flex;top: ${get(`#nav`, `height`) + 25}px;}`)) : (x = 0, setTimeout(() => s(`#nav_c{display: none;}`), 5));
         window.checkdraw = () => {
-            imgD.src = `../media/draw${imgDsrc}.jpg`;
-            imgfull.src = `../media/draw${imgDsrc}.jpg`;
+            imgD.src = `draw${imgDsrc}.jpg`;
+            imgfull.src = `draw${imgDsrc}.jpg`;
             return imgDsrc === 1 ? `Fish ~ 7th STD` :
                 imgDsrc === 2 ? `Doodle Art ~ 5th STD` :
                 imgDsrc === 3 ? `Temple ~ UKG` :
