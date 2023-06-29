@@ -182,8 +182,7 @@ var allviews = undefined,
             firebase.database().ref("Portfolio/View").update({
                 "Views": views + 1
             });
-            localStorage.setItem("Viewed", "Yes");
-        };
+        } else localStorage.setItem("Viewed", "Yes");
         window.w_s = 0,
             window.h_s = 0,
             window.x = 0,
